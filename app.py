@@ -9,7 +9,7 @@ api_key = st.sidebar.text_input("Gemini API Key를 입력하세요", type="passw
 
 if api_key:
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-2.0-flash') 
+    model = genai.GenerativeModel('gemini-1.5-flash) 
 
     user_input = st.text_input("어떤 맛집을 찾으시나요? (예: 강남역 가성비 좋은 점심 맛집 알려줘)")
 
